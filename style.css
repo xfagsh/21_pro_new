@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper_flex{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    background-color:white;
+}
+
+.box:nth-child(1){
+    display:flex;
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    background-color:#2e7270;
+} 
+
+.logo_img{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+}
+
+.header__background{
+    
+    background-image: url("img/main.jpg");
+    width: 1200px;
+    height: 600px;
+    background-size: cover;
+    order: 3;
+    justify-content: center;
+    background-color:#2e7270;
+    margin-top: 3px;
+}
+.header_h1{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header_h1 h1{
+    color: white;
+}
+.header_btn{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    background-color: #2e7270;
+    color: white;
+    height: 60px;
+    width: 250px;
+    font-size: 20px;
+}
+.s_s{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 200px;
+    
+}
+.s_s img{
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
+
+.box:nth-child(3){
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#2e7270;
+}
+
+.box:nth-child(4){
+    background-color: white;
+    border: 3px solid #2e7270;
+    padding: 25px 50px 25px 50px;
+    height: 500px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box:nth-child(5){
+        display: flex;
+        color: white;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color:#2e7270;
+}
+
+.grid_wrapper{
+    margin: 0 auto;
+    display: grid;
+    width: 1200px;
+    height: 800px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.card{
+    background-color: white;
+    border: 1px solid #2e7270;
+    
+}
+
+.card img{
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+}
+
+.special-item{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.card:nth-child(1){
+    display: flex;
+flex-direction: column;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+padding: 15px;
+
+}
+
+.card:nth-child(n+2):nth-child(-n+7){
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+padding:30px;
+}
+
+.card:nth-child(n+1):nth-child(-n+7) p{
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card:nth-child(n+2):nth-child(-n+7) hr{
+    border: 3px solid brown;
+    width: 100px;
+}
+
+ .card:nth-child(8){
+    height: 250px;  
+    background: rgb(13,36,0);
+    background: linear-gradient(90deg, rgba(13,36,0,1) 0%, rgba(46,121,9,1) 44%, rgba(0,255,91,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.img{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contacts
+{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: white;
+    line-height: 1,5em;
+
+}
+.contacts h3{
+    color:red;
+}
+.contacts h4{
+    color: red;
+}
+
+.ss img{
+    height: 50px;
+    width: 50px;
+}
+
+.nav_buttom {
+    text-align: end;
+    width: 400px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2em;
+}
+.nav_buttom li{
+    list-style-type: none;
+}
+
+.nav_buttom a {
+    text-decoration: none;
+    color: white;
+}
+
