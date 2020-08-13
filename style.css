@@ -126,25 +126,17 @@
 }
 
 
-.grid_wrapper{
+.cards_wrapper{
     margin: 0 auto;
     display: grid;
     width: 1200px;
     height: 800px;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-    
-}
+    grid-template-columns: repeat(3, 1fr);
+    border-left: 0.5px solid black;
+    border-right: 1px solid black;
 
-.card_img{
-    height: 120px;
-    width: 120px;
-    padding: 10px;
 }
-
-.card_1{
-    grid-column-start: 1;
-    grid-column-end: 4;
+.card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,76 +145,17 @@
     padding: 15px;
     background-color: white;
     border: 1px solid var(--bg-color);
-    
 }
-
-.card__msk{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:30px;
-    background-color: white;
-    border: 1px solid var(--bg-color); 
+.card__img{
+    height: 120px;
+    padding: 10px;
 }
-.card__eu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:30px;
-    background-color: white;
-    border: 1px solid var(--bg-color); 
-}
-.card__africa{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:30px;
-    background-color: white;
-    border: 1px solid var(--bg-color); 
-}
-.card__NAmerica{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:30px;
-    background-color: white;
-    border: 1px solid var(--bg-color); 
-}
-.card__SAmerica{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:30px;
-    background-color: white;
-    border: 1px solid var(--bg-color); 
-}
-.card__australia{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:30px;
-    background-color: white;
-    border: 1px solid var(--bg-color); 
-}
-
-
-.card_p{
+.card__p{
     padding: 10px;
     font-size: 20px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 130px;
 }
 
 .card_hr{
