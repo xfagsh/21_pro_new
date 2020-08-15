@@ -9,6 +9,22 @@
 --primary-color:#26BD5A;
 --secomd-bg-color:#F5F5F5;
 }
+.header_fixed{
+    position: fixed;
+    top: 10%;
+    left: 1%;
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    color: white;
+    padding: 10px;
+}
+.header_fixed__a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 .wrapper_flex{
     margin: 0 auto;
     width: 1200px;
@@ -124,6 +140,24 @@
     border: none;
 
 }
+.card__ul li{
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+.card__ul li:nth-child(1)::before{
+    content: ' ✈️ ';
+}
+.card__ul li:nth-child(2)::before{
+    content: ' 🧳 ';
+}
+.card__ul li:nth-child(3)::before{
+    content: ' 🕺 ';
+}
+.card__ul li:nth-child(4)::before{
+    content: ' ☂️ ';
+}
 
 
 .cards_wrapper{
@@ -158,16 +192,18 @@
     height: 130px;
 }
 
-.card_hr{
+.card__line{
     border: 2px solid var(--primary-color);
     width: 100px;
+    margin: 20px 0;
 }
 
  .footer{
     height: 250px;  
-    /* background: rgb(13,36,0);
-    background: linear-gradient(90deg, rgba(13,36,0,1) 0%, rgba(46,121,9,1) 44%, rgba(0,255,91,1) 100%); */
-    background-color: var(--bg-color);
+    /* background: linear-gradient(180deg, rgba(13,36,0,1) 0%, rgba(46,121,9,1) 84%, rgba(0,255,91,1) 100%); */
+    /* background-color: var(--bg-color);
+     */
+    background: radial-gradient(blue, black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +211,7 @@
     grid-column-end: 4;
 } 
 
-.logo__footer{
+.footer__logo{
     width: 400px;
     display: flex;
     align-items: center;
@@ -205,13 +241,18 @@
     color: red;
 }
 
+.footer__social{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
 .social__img
 {
     height: 50px;
     width: 50px;
 }
 
-.nav_buttom {
+.footer__nav{
     text-align: end;
     width: 400px;
     padding: 20px;
@@ -219,11 +260,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2em;
 }
-.nav_buttom li{
+.footer__nav li{
     list-style-type: none;
 }
 
-.nav_buttom a {
+.footer__nav a {
     text-decoration: none;
     color: white;
 }
