@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествия</title>
     <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
 </head>
 
 <body>
@@ -26,6 +27,18 @@
             </nav>
         </header>
         <div class="promo_wrapper">
+            <div class="wrapper_form">
+                <form action="" method="POST">
+                    <h3>Давайте сюда ваши данные</h3>
+                    <label for="name">Ваше имя</label>
+                    <input type="text" name="name">
+                    <label for="tel">Ваш телефон</label>
+                    <input type="tel" name="tel" required>
+                    <label for="email">Ваш email</label>
+                    <input type="email" name="email">
+                    <button type="submit"> Отправить </button>
+                </form>
+            </div>
 
             <h1 class="promo__wrapper_h1">Только красивые путешествия</h1>
             <div class="promo__wrapper_btn">
