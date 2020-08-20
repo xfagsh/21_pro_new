@@ -63,10 +63,9 @@
 }
 
 .wrapper_form{
-
     border: 2px solid black;
     position: fixed;
-    left: 650px;
+    left: 40%;
     width: 300px;
     top: 200px;
     height: 300px;
@@ -78,6 +77,24 @@
     flex-direction: column;
     margin: 40px;
 }
+.wrapper_form form i[class="fa fa-times"] {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.wrapper_form form i[class="fa fa-times"]:hover{
+    color:white;
+    background-color: var(--danger-color);
+    border-radius: 50%;
+}
+
 .wrapper_form form input{
     font-size: 20px;
     margin-bottom: 5px;
