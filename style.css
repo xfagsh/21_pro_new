@@ -20,6 +20,9 @@
     color: white;
     padding: 10px;
 }
+
+
+
 .header_fixed__a{
     text-decoration: none;
     color: inherit;
@@ -41,9 +44,27 @@
     font-size: 20px;
     background-color: var(--bg-color);
 }
-
+@keyframes globus {
+    0%{
+        transform:rotate(0);
+        /* transform: scale(1, 2); */
+    }
+    100%{
+        transform:rotate(360deg);
+        /* transform: scale(2, 2); */
+        width: 500px;
+        height:500px;
+    }
+}
 
 .logo__img{
+    z-index: 999;
+    position: relative;
+    animation-name: globus;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
     width: 60px;
     height: 60px;
     margin-left: 30px;
@@ -62,20 +83,34 @@
     margin: 30px;
 }
 
+
 .wrapper_form{
     border: 2px solid black;
     position: fixed;
-    left: 40%;
+    left: 39.5%;
     width: 300px;
     top: 200px;
     height: 300px;
     background-color: #fff;
     border-radius: 15px;
+    display: none;
+  
+}
+@keyframes gone{
+    0%{ opacity: 1;}
+    100% {opacity: 0; 
+    margin-top:200px ;}
+}
+.anim_gone{
+    animation-name: gone;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 .wrapper_form form{
     display: flex;
     flex-direction: column;
     margin: 40px;
+    
 }
 .wrapper_form form i[class="fa fa-times"] {
     position: absolute;
@@ -93,6 +128,7 @@
     color:white;
     background-color: var(--danger-color);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .wrapper_form form input{
