@@ -38,9 +38,51 @@ icons = document.querySelectorAll(".fa-arrow-up");
 for (let i = 0; i < faq_quest.length; i++) {
     faq_quest[i].onclick = () =>{
         faq_answer[i].classList.toggle("visible_helper");
+        faq_answer[i].classList.toggle("animate__fadeInDown");
+        // faq_answer[i].classList.toggle("animate__fadeOutUp");
         icons[i].classList.toggle("transform_helper");
+    }
 }
+
+//здесь у нас будут события с карточками
+let card_parags = document.querySelectorAll(".card__p");
+for (let i = 0; i < card_parags.length; i+=1) {
+    card_parags[i].onclick = function(){
+        this.style.color="red";
+    }
 }
+
+
+//делаем часы в системе компонентов
+ let watch = document.createElement("div");
+ watch.classList.add("watch");
+document.querySelector(".header").append(watch);
+let time = new Date();
+watch.innerHTML = `${time.getSeconds()}`
+setInterval(() => {
+    let time = new Date();
+    watch.innerHTML = `${time.getSeconds()}`
+}, 1000);
+
+
+
+
+// let Petya = {
+//     name: "Petya",
+//     surname: "Petrov",
+//     programming: function(){
+//         alert("Я программирую");
+//     }
+// }
+// let autumn = ["Сентябрь", "Октябрь", "Ноябрь"];
+// console.table(Petya);
+// console.table(autumn);
+
+// let superPetya = Petya;
+// superPetya.run = function(){
+//     alert("Он очень быстро бегает");
+// }
+// superPetya.name = "SuperPetya";
 
 
 
