@@ -5,31 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествия</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
+<script src="code.js" defer></script>
 
 <body>
-    <div class="cookie_fixed">
-        <!-- <div class="cookie__blok"> -->
-            <img class="cookie__img"src="img/cookie.png" alt="">
-            <p class="cookie__p">Наш сайт использует файлы cookies для получения статистики и улучшения качества работы сайта</p>
-            <button class="cookie__btn"><span>Я ПОНЯЛ</span></button>
-            <button class="cookie__btn__ext">X</button>
-        <!-- </div> -->
-    </div>
-
-    <!-- <div class="cookie__fixed">
-        <img src="img/tree.png" alt="">
-        <p>Наш сайт использует файлы cookies для получения статистики и улучшения качества работы сайта</p>
-        <button class="cookie__btn">Я </button>
-    </div> -->
-
-    <!-- <a class="header_fixed__a" href="index.html">Главная</a>
-        <a class="header_fixed__a" href="#">О нас</a>
-        <a class="header_fixed__a" href="#">Контакты</a> -->
-    
-
+        
     <div class="wrapper_flex">
         <header class="header">
             <div class="logo">
@@ -43,10 +29,32 @@
         </header>
         <div class="promo_wrapper">
 
+            <div class="wrapper_form">
+                <form action="" method="">
+                    <i class="fa fa-times"></i>
+                    <h3>Давайте сюда ваши данные</h3>
+                    <lebel for="name">Ваше Имя</lebel>
+                    <input type="text" name="Name">
+                    <lebel for="tel">Ваш телефон</lebel>
+                    <input type="tel" name="tel" id="" required>
+                    <lebel for="email">Ваш email</lebel>
+                    <input type="email" name="email" id="">
+                    <button type="submit">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+           
             <h1 class="promo__wrapper_h1">Только красивые путешествия</h1>
             <div class="promo__wrapper_btn">
                 <button>Присоединиться</button>
+                
             </div>
+
+            <div class="scroll">
+                <div class="line"></div>    
+            </div>
+            
+            <div class="arrow">></div>
+
             <div class="social">
                 <img src="img/vk.png" class="social_img" alt="">
                 <img src="img/facebook.png" class="social_img" alt="">
@@ -162,10 +170,25 @@
                     летающих пауков там нет! Или есть. Приезжайте и проверьте сами.
                 </p>
             </div>
+        </div>
+
+
+            <div class="faq_wrapper">
+                <div class="faq_quest">Сколько стоит тур?</div>
+                <div class="faq_answer animate__animated">15 руб</div>
+                <div class="faq_quest">Есть ли снег в Лапландии?</div>
+                <div class="faq_answer animate__animated">Вроде всегда есть.</div>
+                <div class="faq_quest">Можно ли увидеть северное сияние?</div>
+                <div class="faq_answer animate__animated" >Можно, но только ночью</div>
+            </div>
 
 
             <div class="footer">
-
+                <div class="cookie__wrapper">
+                    <img class="cookie__wrapper__img" src="img/cookie.png" alt="">
+                    <p class="cookie__wrapper__p">Сайт использует cookie</p>
+                    <button class="cookie__wrapper__button">Смириться</button>
+                </div>
                 <div class="contacts">
                     <h3 class="cont_h3">Мы рядом с вами</h3>
                     <h4 class="cont_h4">Москва, ул. Героев Труда,6</h4>
@@ -180,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="footer__logo">
+                <div class="footer__logo animate__animated animate__bounce animate-repeat-3">
                     <img src="img/logo.png" alt="">
                 </div>
 

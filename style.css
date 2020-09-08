@@ -1,98 +1,18 @@
+@import 'variables.css';
+@import 'header.css';
+@import 'promo.css';
+@import 'animation.css';
+@import 'info.css';
+@import 'blog.css';
+@import 'cards.css';
+@import 'footer.css';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
---bg-color:#303741;
---danger-color:#56CEF4;
---primary-color:#26BD5A;
---secomd-bg-color:#F5F5F5;
-}
 
-
-
-
-
-.cookie_fixed{
-    position: absolute;
-    /* top: 10%; */
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    background-color: rgba(0,0,0,.75);;
-    color: white;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 3fr 300px 100px;
-    /* margin: auto; */
-    bottom: -100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-
-
-    
-}
-
-.cookie__img{
-    margin: auto;
-    height: 150px;
-    width: 150px;
-
-
-}
-.cookie__p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Amatic SC', cursive;
-    
-    
-}
-
-
-.cookie__btn {
-    background-color: #89d8d3;
-  background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
-    border: none;
-    z-index: 1;
-    height: 40px;
-    width: 200px;
-    margin: auto;
-    border-radius: 5px;
-    color: white;
-    font-size: 30px;
-    font-family: 'Amatic SC', cursive;
-  }
-  
-  .cookie__btn:hover {
-    color:var(--bg-color);
-  }
- 
-.cookie__btn__ext{
-    display: flex;
-    height: 40px;
-    width: 40px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin-top: 10px ;
-    margin-left: 10px;
-    background-color: #4dccc6;
-  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
-    color: var(--secomd-bg-color);
-    border-radius: 5px;
-    font-size: 30px;
-    
-}
-.header_fixed__a{
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
 
 .wrapper_flex{
     margin: 0 auto;
@@ -103,252 +23,122 @@
     flex-direction: column;
 }
 
-.header{
-    display: grid;
-    grid-template-columns: 200px 600px;
-    grid-template-rows: 50px 1fr 50px;
-    font-size: 20px;
-    background-color: var(--bg-color);
-}
 
-
-.logo__img{
-    width: 60px;
-    height: 60px;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-.nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px;
-}
-.nav__a{
+.header_fixed__a{
     text-decoration: none;
-    color: white;
-    font-size: 40px;
-    font-family: 'Amatic SC', cursive;
-    margin: 30px;
-}
-
-.promo_wrapper{
-    
-    background-image: url("img/main.jpg");
-    height: 600px;
-    background-size: cover;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    display:grid;
-    margin-top: 3px;
-}
-.promo__wrapper_h1{
-    height: 200px;
-    grid-column: 1/4;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: white;
-    font-family: 'Amatic SC', cursive;
-    font-size: 50px;
-    
-}
-.promo__wrapper_btn{
-   grid-column: 1/4;
-   display: flex;
-   justify-content: center;
-}
-
-.promo__wrapper_btn button{
-    height: 60px;
-    width: 200px;
-    font-size: 30px;
-    background-color: #89d8d3;
-    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
-    border: none;
-    margin: auto;
-    border-radius: 10px;
-    color: white;
-    font-family: 'Amatic SC', cursive;
-
-}
-
-.social{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    grid-column: 3/4;
-    height: 200px;
-    
-}
-.social_img{
-    height: 80px;
-    width: 80px;
-    padding: 10px;
-}
-
-.info{
-    color: white;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-family: 'Amatic SC', cursive;
-
-    background-color:var(--bg-color);
-    
-
-}
-
-.blog{
-    background-color: white;
-    border: 1px solid var(--bg-color);
-    padding: 25px 50px 25px 50px;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.info_p{
-    
-    font-size: 30px;
-    font-family: 'Amatic SC', cursive;
-    border: none;
-
-}
-
-.card__ul li{
-    list-style-type: none;
-    font-size: 30px;
-    text-align: center;
-    line-height: 1.5;
-}
-.card__ul li:nth-child(1)::before{
-    content: ' 🎷 ';
-}
-.card__ul li:nth-child(2)::before{
-    content: ' 🏠 ';
-}
-.card__ul li:nth-child(3)::before{
-    content: ' ✈️ ';
-}
-.card__ul li:nth-child(4)::before{
-    content: ' 🏝️ ';
-}
-.cards__wrapper{
-    margin: 0 auto;
-    display: grid;
-    width: 1200px;
-    height: 800px;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* border-left: 1px solid var(--bg-color) ;
-    border-right: 1px solid var(--bg-color); */
-    font-family: 'Amatic SC', cursive;
-    
-    
-}
-
-
-.card{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 25px;
-    background-color: white;
-    border: 1px solid var(--bg-color);
-    font-family: 'Amatic SC', cursive;
-    font-size: 25px;
-    text-align: center;
-    
-}
-.card__img{
-    height: 120px;
-    padding: 10px;
-}
-
-
-
-
-.card__line{
-    border: 2px solid var(--primary-color);
-    width: 100px;
-    margin: 20px 0;
-}
-
- .footer{
-    height: 250px;  
-    background-color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    color: inherit;
+    display: block;
 } 
 
-.footer__logo{
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+
+.wrapper_form{
+    left: 39%;
+    width: 300px;
+    top:200px;
+    height: 300px;
+    border: 2px solid black;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.47);
+    border-radius: 15px;
+    color: white;
+    border-color: rgba(0, 0, 0, 0.37);
+    display: none;
+    
 }
 
-.contacts
-{
+.wrapper_form form{
+    
     display: flex;
-    width: 400px;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
+    margin: 40px;
+    
+}
+.wrapper_form form i[class="fa fa-times"]{
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.wrapper_form form i[class="fa fa-times"]:hover{
+    background-color: #03c8a8;
+    color: black;
+    border: 2px solid black ;
+    border-radius: 50%;
+    opacity: 0.05;
+    cursor: pointer;
+
+
+}
+
+.wrapper_form form input{
     font-size: 20px;
-    padding-left: 30px;
-    padding-top: 10px;
-    color: white;
-    line-height: 1,5em;
-
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.27);
+    border-color: rgba(0, 0, 0, 0.25);
+    
+     
 }
 
-.footer__social{
-width: 250px;
-display: flex;
-justify-content: space-between;
-}
-.cont_h3{
-    color:red;
-}
-.cont_h4{
-    color: red;
-}
-
-.social__img
-{
-    height: 50px;
-    width: 50px;
-}
-
-.footer__nav{
-    text-align: end;
-    width: 400px;
-    padding: 20px;
+.wrapper_form form  button[type='submit']{
+    display: flex;
     font-size: 20px;
-    font-family: 'Amatic SC', cursive;
-    line-height: 2em;
-}
-.footer__nav li{
-    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    color: var(--secomd-bg-color);
+    border-radius: 5px;
+    align-self: flex-end;
 }
 
-.footer__nav a {
-    text-decoration: none;
+.faq_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10% 20px;
+    border: 2px solid black;
+
+}
+
+.faq_quest{
+    border: 2px solid black;
+    background-color: var(--bg-color);
     color: white;
+    width: 80%;
+    font-size: 2em;
+    padding: 1rem;
 }
 
+.faq_answer{
+    font-size: 2em;
+    width: 80%;
+    padding-left: 2%;
+    margin-bottom: 3rem ;
+    display: none;
+}
+
+.faq_quest:hover{
+    cursor: pointer;
+}
+
+.visible_helper{
+    display: block;
+    transition: all 1s;
+}
+
+.watch {
+    color:white;
+    font-size: 32px;
+    font-family: Verdana;
+    z-index: 2;
+    position: absolute;
+}
