@@ -1,0 +1,142 @@
+/* header logo animation */
+
+@keyframes globus{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Form animation */
+
+@keyframes gone{
+    0% { opacity: 1;}
+    100% {opacity: 0;
+    margin-top:200px;}
+}
+.anim_gone{
+    animation: gone 1s;
+}
+
+/* Scroll animation */
+
+.scroll{
+    height: 40px;
+    width: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 200px;
+    grid-column: 2/3;
+    grid-row: 3/3;
+}
+.line{
+    height: 10px;
+    width: 7px;
+    background-color: rgb(243, 237, 237);
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+}
+
+.arrow{
+    font-size: 17px;
+    font-style: italic;
+    color: white;
+    grid-column: 2/3;
+    grid-row: 4/4;
+    position: relative;
+    left: 12px;
+    
+}
+.arrow {
+    
+    animation-name: arrowDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    }
+    @keyframes arrowDown {
+    0% {
+    transform: rotate(90deg);
+    top: 95px;
+    }
+    100% {
+    transform: rotate(90deg);
+   top: 97px;
+    }
+    }  
+    .line {
+        animation-iteration-count:infinite;
+        animation-name: LineInDown2;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        }
+        @keyframes LineInDown2 {
+        50% {
+        opacity: 0.1;
+        }
+        100% {
+        margin-top: 50px;
+        opacity: 0.01;
+        }
+        } 
+
+        /* faq animation */
+    
+
+
+        @keyframes arrow_anim{
+            0%{
+                transform: rotate(0deg);
+            }
+            100% {transform:rotate(180deg)
+            }
+        }  
+        
+        .transform_helper{
+            animation-name: arrow_anim;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+/* Line Animation */
+
+.wobble {
+    
+    animation-name: wobble;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    }
+    
+    @keyframes wobble {
+    0% {
+    transform: none;
+    }
+    15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+    30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg;
+    }
+    45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+    60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+    75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+    100% {
+    transform: none;
+    }
+    } 

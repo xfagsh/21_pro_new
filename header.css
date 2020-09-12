@@ -1,0 +1,41 @@
+.header_fixed__a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+.header{
+    display: grid;
+    grid-template-columns: 200px 600px;
+    grid-template-rows: 50px 1fr 50px;
+    font-size: 20px;
+    background-color: var(--bg-color);
+}
+
+.logo__img{
+   
+    animation-name: globus;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+.nav__a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}

@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествия</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
+<script src="code.js" defer></script>
 
 <body>
+        
     <div class="wrapper_flex">
         <header class="header">
+           
             <div class="logo">
                 <img class="logo__img" src="img/logo.png" />
             </div>
@@ -22,143 +30,200 @@
         </header>
         <div class="promo_wrapper">
 
-            <h1 class="promo_wrapper__h1">Только красивые путешествия</h1>
-            <div class="promo_wrapper__btn">
-                <button> Присоединиться</button>
+            <div class="wrapper_form">
+                <form action="" method="">
+                    <i class="fa fa-times"></i>
+                    <h3>Давайте сюда ваши данные</h3>
+                    <lebel for="name">Ваше Имя</lebel>
+                    <input type="text" name="Name">
+                    <lebel for="tel">Ваш телефон</lebel>
+                    <input type="tel" name="tel" id="" required>
+                    <lebel for="email">Ваш email</lebel>
+                    <input type="email" name="email" id="">
+                    <button type="submit">ОТПРАВИТЬ</button>
+                </form>
             </div>
+           
+            <h1 class="promo__wrapper_h1">Только красивые путешествия</h1>
+            <div class="promo__wrapper_btn">
+                <button>Присоединиться</button>
+                
+            </div>
+
+            <div class="scroll">
+                <div class="line"></div>    
+            </div>
+            
+            <div class="arrow">></div>
+
             <div class="social">
-                <img src="img/vk.png" alt="" class="social__img">
-                <img src="img/facebook.png" alt="" class="social__img">
-                <img src="img/instagram.png" alt="" class="social__img">
+                <img src="img/vk.png" class="social_img" alt="">
+                <img src="img/facebook.png" class="social_img" alt="">
+                <img src="img/instagram.png" class="social_img" alt="">
             </div>
 
-        </div>
-    </div>
-    <div class="info">
-        <h3 class="info__h3"> Путешествуй красиво! Блог в фотографиях </h3>
-        <p class="info__p">
-            Представьте себе все лучшее, что есть в России: широкие просторы, разнообразная природа, щедрая душа,
-            девушки особой красоты, баня в конце концов. Добавьте к этому все то, чем так привлекательна Москва:
-            гастрономические рестораны, безудержные вечеринки, звезды ТВ и инстаграмма вокруг. Взболтайте, но не
-           смешивайте и получите Розу Хутор 2017 – правильный баланс здорового лайфстайла и роскоши.
-        </p>
-        <p class="info__p">
-            Красная поляна также радует своей доступностью: перелет занимает 2,5 часа, иметь визу необходимости нет,
-            заказать такси можно через привычное приложение за 1400 руб., а время в пути от аэропорта до отеля
-            составляет менее часа! Ну, где еще такое есть? При этом местная инфраструктура не просто ничуть не
-            уступает Альпам, но и даже предвосхищает ожидания: здесь вкуснее, уютнее и веселее. Я уже не говорю об
-            удивительном контрасте температур – наверху зима, а внизу лето!
-        </p>
-        <p class="info__p">
-            Более того, несмотря на весну за окном, успеть все это оценить лично совсем не поздно – рекордное
-            количество снега обещает продлить сезон на весь апрель, а курорт тем временем предлагает на этот период
-            очень привлекательные цены!
-        </p>
-        <p class="info__p">
-            В общем, какое бы время вы ни выбрали, Роза Хутор удивит и подарит желание говорить о России с
-            восторгом!</p>
-    </div>
+            <input type="date" id="Today">
 
-
-    <div class="box">Причины воспользоваться нашими услугами!</div>
-
-
-    </div>
-
-
-    <div class="grid_wrapper">
-        <div class="card special-item">
-            <img src="img/tree.png">
-            <p>Веселые анимации</p>
-            <p>Неплохие номера</p>
-            <p>Быстрые самолеты</p>
-            <p>Мягкий песок на пляже</p>
-        </div>
-        <div class="card">
-            <img src="img/moscow.png">
-            <h3>Путешествия по России</h3>
-            <hr>
-            <p>Балалайки, матрешки, Кремль</p>
 
         </div>
-        <div class="card">
-            <img src="img/big-ben.png">
-            <h3>Путешествия по Европе</h3>
-            <hr>
-            <p>
-                Разные страны, разные культуры! Все самое модное в Европе.
+        <div class="info">
+            <h3> Путешествуй красиво! Блог в фотографиях </h3>
+        </div>
+
+
+        <div class="blog">
+
+            <p class="info_p">
+                Представьте себе все лучшее, что есть в России: широкие просторы, разнообразная природа, щедрая
+                душа,
+                девушки особой красоты, баня в конце концов. Добавьте к этому все то, чем так привлекательна Москва:
+                гастрономические рестораны, безудержные вечеринки, звезды ТВ и инстаграмма вокруг. Взболтайте, но не
+                смешивайте и получите Розу Хутор 2017 – правильный баланс здорового лайфстайла и роскоши.
             </p>
-        </div>
-        <div class="card">
-            <img src="img/pyramids.png">
-            <h3>Путешествия по Африке</h3>
-            <hr>
-            <p>
-                Классные сафари, Быстрые львы и невероятные саванны. Все в одном флаконе!
-                Бонус: купание с крокодилами.
+            <p class="info_p"> Красная поляна также радует своей доступностью: перелет занимает 2,5 часа, иметь визу
+                необходимости
+                нет,
+                заказать такси можно через привычное приложение за 1400 руб., а время в пути от аэропорта до отеля
+                составляет менее часа! Ну, где еще такое есть? При этом местная инфраструктура не просто ничуть не
+                уступает Альпам, но и даже предвосхищает ожидания: здесь вкуснее, уютнее и веселее. Я уже не говорю
+                об
+                удивительном контрасте температур – наверху зима, а внизу лето!
             </p>
-        </div>
-        <div class="card">
-            <img src="img/north-america.png">
-            <h3>Путешествия по по Северной Америке</h3>
-            <hr>
-            <p>
-                Конечно мы проедем всю Америку и обязательно заедем в Голивуд.
+            <p class="info_p">
+                Более того, несмотря на весну за окном, успеть все это оценить лично совсем не поздно – рекордное
+                количество снега обещает продлить сезон на весь апрель, а курорт тем временем предлагает на этот
+                период
+                очень привлекательные цены!
             </p>
+            <p class="info_p">
+                В общем, какое бы время вы ни выбрали, Роза Хутор удивит и подарит желание говорить о России с
+                восторгом!</p>
+
+
         </div>
-        <div class="card">
-            <img src="img/south-america.png">
-            <h3>Путешествия по Южной Америке</h3>
-            <hr>
-            <p>
-                Южная Америка ждет нас! И там куда безопаснее, чем в американских фильмах.
-            </p>
-        </div>
-        <div class="card">
-            <img src="img/kangaroo.png">
-            <h3>Путешествия по Австралии</h3>
-            <hr>
-            <p>
-                Австралия, кенгуру,
-                летающих пауков там нет! Или есть. Приезжайте и проверьте сами.
-            </p>
+
+        <div class="info">
+            <h3>Причины воспользоваться нашими услугами!</h3>
         </div>
 
 
-        <div class="card special-item">
 
-            <div class="contacts">
-                <h3>Мы рядом с вами</h3>
-                <h4>Москва, ул. Героев Труда,6</h4>
-                <p>Тел: 8(499)-183-77-77</p>
-                <p>E-mail: edu@travel.ru</p>
-                <p>Часы работы: пн-пт 10 - 13</p>
-                <br>
-                <div class="ss">
-                    <img src="img/vk.png" alt="">
-                    <img src="img/facebook.png" alt="">
-                    <img src="img/instagram.png" alt="">
+        <div class="card">
+            <img class="card__img" src="img/tree.png">
+            <div class="card__line"></div>
+            
+            <ul class="card__ul">
+                <li> Веселые анимации</li>
+                <li>Неплохие номера</li>
+                <li>Быстрые самолеты</li>
+                <li>Мягкий песок на пляже</li>
+            </ul>
+              
+        </div>
+
+
+        <div class="cards__wrapper">
+
+            <div class="card">
+                <img class="card__img" src="img/moscow.png">
+                <h3 class="card__h3">Путешествия по России</h3>
+                <div class="card__line"></div>
+                <p class="card__p">Балалайки, матрешки, Кремль</p>
+
+            </div>
+            <div class="card">
+                <img class="card__img" src="img/big-ben.png">
+                <h3 class="card__h3">Путешествия по Европе</h3>
+                <div class="card__line"></div>
+                <p class="card__p">
+                    Разные страны, разные культуры! Все самое модное в Европе.
+                </p>
+            </div>
+            <div class="card">
+                <img class="card__img" src="img/pyramids.png">
+                <h3 class="card__h3">Путешествия по Африке</h3>
+                <div class="card__line"></div>
+                <p class="card__p">
+                    Классные сафари, Быстрые львы и невероятные саванны. Все в одном флаконе!
+                    Бонус: купание с крокодилами.
+                </p>
+            </div>
+            <div class="card">
+                <img class="card__img" src="img/north-america.png">
+                <h3 class="card__h3">Путешествия по по Северной Америке</h3>
+                <div class="card__line"></div>
+                <p class="card__p">
+                    Конечно мы проедем всю Америку и обязательно заедем в Голивуд.
+                </p>
+            </div>
+            <div class="card">
+                <img class="card__img" src="img/south-america.png">
+                <h3 class="card__h3">Путешествия по Южной Америке</h3>
+                <div class="card__line"></div>
+                <p class="card__p">
+                    Южная Америка ждет нас! И там куда безопаснее, чем в американских фильмах.
+                </p>
+            </div>
+            <div class="card">
+                <img class="card__img" src="img/kangaroo.png">
+                <h3 class="card__h3">Путешествия по Австралии</h3>
+                <div class="card__line"></div>
+                <p class="card__p">
+                    Австралия, кенгуру,
+                    летающих пауков там нет! Или есть. Приезжайте и проверьте сами.
+                </p>
+            </div>
+        </div>
+
+
+            <div class="faq_wrapper">
+                <div class="faq_quest">Сколько стоит тур?</div>
+                <div class="faq_answer animate__animated">15 руб</div>
+                <div class="faq_quest">Есть ли снег в Лапландии?</div>
+                <div class="faq_answer animate__animated">Вроде всегда есть.</div>
+                <div class="faq_quest">Можно ли увидеть северное сияние?</div>
+                <div class="faq_answer animate__animated" >Можно, но только ночью</div>
+            </div>
+
+
+            <div class="footer">
+                <div class="cookie__wrapper">
+                    <img class="cookie__wrapper__img" src="img/cookie.png" alt="">
+                    <p class="cookie__wrapper__p">Сайт использует cookie</p>
+                    <button class="cookie__wrapper__button">Смириться</button>
+                </div>
+                <div class="contacts">
+                    <h3 class="cont_h3">Мы рядом с вами</h3>
+                    <h4 class="cont_h4">Москва, ул. Героев Труда,6</h4>
+                    <p>Тел: 8(499)-183-77-77</p>
+                    <p>E-mail: edu@travel.ru</p>
+                    <p>Часы работы: пн-пт 10 - 13</p>
+                    <br>
+                    <div class="footer__social">
+                        <img src="img/vk.png" class="social__img" alt="">
+                        <img src="img/facebook.png" class="social__img" alt="">
+                        <img src="img/instagram.png" class="social__img" alt="">
+                    </div>
+                </div>
+
+                <div class="footer__logo animate__animated animate__bounce animate-repeat-3">
+                    <img src="img/logo.png" alt="">
+                </div>
+
+                <div class="footer__nav">
+                    <ul>
+                        <li><a href="http://">Путешествия по Украине</a></li>
+                        <li><a href="http://">Путешествия по Китаю</a></li>
+                        <li><a href="http://">Путешествие по Финляндии</a></li>
+                        <li><a href="http://">Путешествие по Норвегии</a></li>
+                        <li><a href="http://">Путешествие по Швеции</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="img">
-                <img src="img/logo.png" alt="">
-            </div>
 
-            <div class="nav_buttom">
-                <ul>
-                    <li><a href="http://">Путешествия по Украине</a></li>
-                    <li><a href="http://">Путешествия по Китаю</a></li>
-                    <li><a href="http://">Путешествие по Финляндии</a></li>
-                    <li><a href="http://">Путешествие по Норвегии</a></li>
-                    <li><a href="http://">Путешествие по Швеции</a></li>
-                </ul>
-            </div>
+
         </div>
-
-
-
-    </div>
     </div>
     </div>
 </body>
