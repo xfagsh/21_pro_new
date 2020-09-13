@@ -3,23 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествия</title>
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" >
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="code.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
+<script src="code.js" defer></script>
 
 <body>
-    <div class="header_fixed">
-        <a href="index.html" class="header_fixed__a">Главная</a>
-        <a href="#" class="header_fixed__a"> О нас</a>
-        <a href="#" class="header_fixed__a">Контакты</a>
-    </div>
- 
+        
     <div class="wrapper_flex">
         <header class="header">
+           
             <div class="logo">
                 <img class="logo__img" src="img/logo.png" />
             </div>
@@ -30,29 +29,40 @@
             </nav>
         </header>
         <div class="promo_wrapper">
-            <div class="wrapper_form" id="wrap">
-                <form action="" method="POST">
+
+            <div class="wrapper_form">
+                <form action="" method="">
                     <i class="fa fa-times"></i>
                     <h3>Давайте сюда ваши данные</h3>
-                    <label for="name">Ваше имя</label>
-                    <input type="text" name="name">
-                    <label for="tel">Ваш телефон</label>
-                    <input type="tel" name="tel" required>
-                    <label for="email">Ваш email</label>
-                    <input type="email" name="email">
-                    <button type="submit"> Отправить </button>
+                    <lebel for="name">Ваше Имя</lebel>
+                    <input type="text" name="Name">
+                    <lebel for="tel">Ваш телефон</lebel>
+                    <input type="tel" name="tel" id="" required>
+                    <lebel for="email">Ваш email</lebel>
+                    <input type="email" name="email" id="">
+                    <button type="submit">ОТПРАВИТЬ</button>
                 </form>
             </div>
-
+           
             <h1 class="promo__wrapper_h1">Только красивые путешествия</h1>
             <div class="promo__wrapper_btn">
                 <button>Присоединиться</button>
+                
             </div>
+
+            <div class="scroll">
+                <div class="line"></div>    
+            </div>
+            
+            <div class="arrow">></div>
+
             <div class="social">
                 <img src="img/vk.png" class="social_img" alt="">
                 <img src="img/facebook.png" class="social_img" alt="">
                 <img src="img/instagram.png" class="social_img" alt="">
             </div>
+
+            <input type="date" id="Today">
 
 
         </div>
@@ -96,22 +106,30 @@
             <h3>Причины воспользоваться нашими услугами!</h3>
         </div>
 
+
+
         <div class="card">
             <img class="card__img" src="img/tree.png">
             <div class="card__line"></div>
+            
             <ul class="card__ul">
-                <li> Веселые анимации </li>
+                <li> Веселые анимации</li>
                 <li>Неплохие номера</li>
                 <li>Быстрые самолеты</li>
                 <li>Мягкий песок на пляже</li>
             </ul>
+              
         </div>
-        <div class="cards_wrapper">
+
+
+        <div class="cards__wrapper">
+
             <div class="card">
                 <img class="card__img" src="img/moscow.png">
                 <h3 class="card__h3">Путешествия по России</h3>
                 <div class="card__line"></div>
                 <p class="card__p">Балалайки, матрешки, Кремль</p>
+
             </div>
             <div class="card">
                 <img class="card__img" src="img/big-ben.png">
@@ -156,20 +174,23 @@
                 </p>
             </div>
         </div>
+
+
             <div class="faq_wrapper">
-                <div class="faq_quest">Сколько стоит тур</div>
-                <div class="faq_answer animate__animated">15 рублей</div>
-                <div class="faq_quest">Есть ли снег в Лапландии</div>
-                <div class="faq_answer animate__animated">Вроде всегда есть</div>
-                <div class="faq_quest">Можно ли увидеть северное сияние</div>
-                <div class="faq_answer animate__animated">Можно, но только ночью</div>
+                <div class="faq_quest">Сколько стоит тур?</div>
+                <div class="faq_answer animate__animated">15 руб</div>
+                <div class="faq_quest">Есть ли снег в Лапландии?</div>
+                <div class="faq_answer animate__animated">Вроде всегда есть.</div>
+                <div class="faq_quest">Можно ли увидеть северное сияние?</div>
+                <div class="faq_answer animate__animated" >Можно, но только ночью</div>
             </div>
 
-            <footer class="footer">
-                <div class="cookie_wrapper">
-                    <img src="" alt="" class="cookie_wrapper__img">
-                    <p class="cookie_wrapper__p"> Сайт использует cookie</p>
-                    <button class="cookie_wrapper__button"> Смириться</button>
+
+            <div class="footer">
+                <div class="cookie__wrapper">
+                    <img class="cookie__wrapper__img" src="img/cookie.png" alt="">
+                    <p class="cookie__wrapper__p">Сайт использует cookie</p>
+                    <button class="cookie__wrapper__button">Смириться</button>
                 </div>
                 <div class="contacts">
                     <h3 class="cont_h3">Мы рядом с вами</h3>
@@ -185,7 +206,7 @@
                     </div>
                 </div>
 
-                <div class="footer__logo animate__animated animate__rotateIn animate__repeat-3" >
+                <div class="footer__logo animate__animated animate__bounce animate-repeat-3">
                     <img src="img/logo.png" alt="">
                 </div>
 
@@ -198,7 +219,7 @@
                         <li><a href="http://">Путешествие по Швеции</a></li>
                     </ul>
                 </div>
-            </footer>
+            </div>
 
 
 

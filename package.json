@@ -1,0 +1,36 @@
+{
+  "name": "DZ6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code.js",
+  "dependencies": {
+    "browser-sync": "^2.26.12",
+    "bulma": "^0.9.0",
+    "concat": "^1.0.3",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-watch": "^5.0.1",
+    "htmlhint": "^0.14.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "sudo": "^1.0.3",
+    "webpack": "^4.44.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xfagsh/21_pro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xfagsh/21_pro/issues"
+  },
+  "homepage": "https://github.com/xfagsh/21_pro#readme"
+}
